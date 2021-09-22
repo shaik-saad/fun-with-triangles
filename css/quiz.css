@@ -1,0 +1,27 @@
+.container , h2{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#quiz-form{
+    max-width: 600px;
+    margin: auto;
+}
+
+.quiz-container{
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.quiz-container p{
+    padding: 1rem 0;
+    text-align: left;
+}
+
+label{
+    display: block;
+    text-align: left;
+}
+
