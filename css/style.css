@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color: #FCA5A5;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FEF2F2;
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+#brand{
+    padding: 1rem 0 0rem 1rem;
+}
+
+.non-bullet-list{
+    list-style: none;
+    text-align: right;
+    padding-bottom: 0.5rem;
+}
+
+.list-item-inline{
+    display: inline;
+}
+
+.nav-link{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem 0.5rem;
+    text-align: center;
+    font-size: large;
+}
+
+main p {
+    margin: 1rem 0;
+}
+
+#error-message{
+    width: 80%;
+    margin: auto;
+    min-height: 6vh;
+    padding: 0.5rem 1rem;
+    color: rgba(255, 0, 0);
+}
+
+.inputs{
+    display: block;
+    width: 60%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+button{
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#output{
+    min-height: 5vh;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    border-radius: 0.3rem;
+    font-size: larger;
+  }
+
+footer{
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer p{
+    display: inline;
+}
+
+footer ul{
+    display: inline;
+}
+
+.social-link{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#copy-right a{
+    color: black;
+}
