@@ -29,7 +29,7 @@ function calculateScore(){
         index++
     }
     // output
-    output.innerText = "The score is " + score
+    output.innerText = `Your score is ${score}`
 }
 
 submitQuizForm.addEventListener("click", calculateScore)
