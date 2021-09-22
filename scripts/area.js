@@ -22,6 +22,7 @@ function calculateArea(){
     // processing
     var area = (Number(base) * Number(height)) / 2
 
+    errorMessage.innerText = ""
     // output
     output. innerText = `The area of a triangle is ${area}`
 }
