@@ -1,15 +1,26 @@
 const inputs = document.querySelectorAll(".inputs")
 const calculateBtn = document.querySelector("#calculate-btn")
 const output = document.querySelector("#output")
+const errorMessage = document.querySelector("#error-message")
 
-console.log(inputs)
 function calculateArea(){
     // input
-    const base = Number(inputs[0].value)
-    const height = Number(inputs[1].value)
+    const base = inputs[0].value
+    const height = inputs[1].value
+
+    // error handling
+    if(base === "" || base === undefined || height === "" || height === undefined){
+        return errorMessage.innerText = "Please enter the values."
+    }
+    if(base%1 !== 0 || height%1 !== 0){
+        return errorMessage.innerText = "Please enter values in number."
+    }
+    if(base <= 0 || height <= 0){
+        return errorMessage.innerText = "Invalid values. Please values above 0."
+    }
 
     // processing
-    var area = (base * height) / 2
+    var area = (Number(base) * Number(height)) / 2
 
     // output
     output. innerText = `The area of a triangle is ${area}`
