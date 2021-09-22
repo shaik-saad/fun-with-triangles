@@ -13,14 +13,14 @@
 </head>
 <body>
     <header>
+        <h1 id="brand">Fun with Triangles</h1>
         <nav id="navbar">
-            <h1 id="navbar-brand">Fun with Triangles</h1>
             <ul class="non-bullet-list">
                 <li class="nav-item list-item-inline">
                     <a class="nav-link" href="/">Is Triangle?</a>
                 </li>
                 <li class="nav-item list-item-inline">
-                    <a class="nav-link" href="quiz.html">Quiz</a>
+                    <a class="nav-link bold" href="quiz.html">Quiz</a>
                 </li>
                 <li class="nav-item list-item-inline">
                     <a class="nav-link" href="hypotenuse.html">Hypotenuse</a>
@@ -31,11 +31,12 @@
             </ul>
         </nav>
     </header>
-    <h1>Quiz on triangles</h1>
+    <div class="container">
+        <h2>Quiz on triangles</h2>
     <p>For each correct answer you will get 1 point</p>
     <form id="quiz-form">
         <div class="quiz-container">
-            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <p>1. What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
             <label>
                 <input type="radio" name="question-1" value="45°">
                 45°
@@ -50,7 +51,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+            <p>2. If a triangle has an angle of 90 degrees, what is it called?</p>
             <label>
                 <input type="radio" name="question-2" value="Obtuse">
                 Obtuse
@@ -65,7 +66,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>A triangle can have</p>
+            <p>3. A triangle can have</p>
             <label>
                 <input type="radio" name="question-3" value="One right angle">
                 One right angle
@@ -76,7 +77,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>Which of the following can form a right angled triangle?</p>
+            <p>4. Which of the following can form a right angled triangle?</p>
             <label>
               <input type="radio" name="question-4" value="14, 15, 26" />
               14, 15, 26
@@ -87,7 +88,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>Which of the following triangles are always similar?</p>
+            <p>5. Which of the following triangles are always similar?</p>
             <label>
                 <input type="radio" name="question-5" value="Equilateral triangle" />
                 Equilateral triangle
@@ -98,7 +99,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>If one angle of a triangle is obtuse, then which one of the following is the possible measure of remaining angles?</p>
+            <p>6. If one angle of a triangle is obtuse, then which one of the following is the possible measure of remaining angles?</p>
             <label>
                 <input type="radio" name="question-6" value="100°" />
                 100°
@@ -109,7 +110,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>If the largest angle in a triangle is 70°, what is the least possible value of the smallest angle of the triangle?</p>
+            <p>7. If the largest angle in a triangle is 70°, what is the least possible value of the smallest angle of the triangle?</p>
             <label>
                 <input type="radio" name="question-7" value="30°" />
                 30°
@@ -120,7 +121,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>The perimeter of scalene triangle with sides a, b, c is</p>
+            <p>8. The perimeter of scalene triangle with sides a, b, c is</p>
             <label>
                 <input type="radio" name="question-8" value="a + b + c" />
                 a + b + c
@@ -135,7 +136,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>A scalene triangle has _ _ _ lines of symmetry</p>
+            <p>9. A scalene triangle has _ _ _ lines of symmetry</p>
             <label>
                 <input type="radio" name="question-9" value="two" />two
             </label>
@@ -149,7 +150,7 @@
             </label>
         </div>
         <div class="quiz-container">
-            <p>There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?
+            <p>10. There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?
             </p>
             <label>
                 <input type="radio" name="question-10" value="85°" />
@@ -167,6 +168,7 @@
     </form>
     <button id="submit-quiz-btn">Submit</button>
     <h2 id="output"></h2>
+    </div>
 
     <footer>
         <p>If you loved❤️ this app, make sure to follow me on</p>

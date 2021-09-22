@@ -7,14 +7,15 @@
     <title>Calculate Hypotenuse</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
+        <h1 id="brand">Fun with Triangles</h1>
         <nav id="navbar">
-            <h1 id="navbar-brand">Fun with Triangles</h1>
             <ul class="non-bullet-list">
                 <li class="nav-item list-item-inline">
                     <a class="nav-link" href="/">Is Triangle?</a>
@@ -23,7 +24,7 @@
                     <a class="nav-link" href="quiz.html">Quiz</a>
                 </li>
                 <li class="nav-item list-item-inline">
-                    <a class="nav-link" href="hypotenuse.html">Hypotenuse</a>
+                    <a class="nav-link bold" href="hypotenuse.html">Hypotenuse</a>
                 </li>
                 <li class="nav-item list-item-inline">
                     <a class="nav-link" href="area.html">Area of Triangle</a>
@@ -36,9 +37,9 @@
         <h1>Calculate Hypotenuse of a Triangle</h1>
         <p id="error-message"></p>
         <label for="base-value">Enter base value (a):</label>
-        <input type="text" id="base-value">
+        <input type="text" id="base-value" class="inputs">
         <label for="height-value">Enter height value (b):</label>
-        <input type="text" id="height-value">
+        <input type="text" id="height-value" class="inputs">
         <button id="calculate-btn">Calculate Hypotenuse</button>
         <h2 id="output"></h2>
     </main>
