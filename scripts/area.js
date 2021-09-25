@@ -4,6 +4,9 @@ const output = document.querySelector("#output")
 const errorMessage = document.querySelector("#error-message")
 
 function calculateArea(){
+    errorMessage.innerText = ""
+    output.innerText = ""
+    
     // input
     const base = inputs[0].value
     const height = inputs[1].value
@@ -22,7 +25,6 @@ function calculateArea(){
     // processing
     var area = (Number(base) * Number(height)) / 2
 
-    errorMessage.innerText = ""
     // output
     output. innerText = `The area of a triangle is ${area}`
 }

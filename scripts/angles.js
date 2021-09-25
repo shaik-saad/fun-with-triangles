@@ -4,6 +4,8 @@ const isTraingle = document.querySelector("#is-triangle-btn")
 const errorMessage = document.querySelector("#error-message")
 
 function checkIsTriangle(){
+    errorMessage.innerText = ""
+    output.innerText = ""
     // processing
     var sum = 0
     for( var i = 0; i < inputs.length; i ++){
@@ -22,10 +24,8 @@ function checkIsTriangle(){
     }
     // output
     if( sum === 180){
-        errorMessage.innerText = ""
         output.innerText = "Yay! The angles you've entered form a triangle."
     } else{
-        errorMessage.innerText = ""
         output.innerText = "Oops! The angles you've entered does not form a triangle."
     }
 }
